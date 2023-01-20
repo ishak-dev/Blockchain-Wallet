@@ -1,0 +1,127 @@
+.home-section {
+  text-align: center;
+  color: rgb(221, 221, 221);
+}
+
+.intro-component {
+  position: relative;
+}
+
+.intro-wallpaper {
+  height: 100vh;
+  overflow: hidden;
+}
+.crypto-wallpaper {
+  max-height: 100vh;
+
+  animation: rotation 158s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.intro-text {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro-description {
+  width: 100%;
+}
+
+.intro-text h1 {
+  padding: 10px;
+  background-color: #120a1d93;
+  font-size: 55px;
+  margin-bottom: 0%;
+}
+
+.intro-text p {
+  margin-top: 0%;
+  font-size: 18px;
+  padding: 10px;
+  background-color: #120a1d93;
+}
+
+.connect-wallet-btn {
+  padding: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  background-image: linear-gradient(to right, #e26418, #2335a4);
+  color: rgb(221, 221, 221);
+  border: none;
+  outline: none;
+  box-shadow: 0px -1px 63px 29px #3688d4;
+  border-radius: 4px;
+}
+
+.wallet-section {
+  height: 100vh;
+}
+
+.wallet-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+.form-left {
+  background-image: linear-gradient(to bottom right, #5e9bca, #e47943);
+  width: 30%;
+  min-width: 300px;
+  text-align: left;
+  border-radius: 5px;
+  margin-right: 5%;
+  padding: 15px 35px;
+}
+
+.form-left > h3 {
+  margin-bottom: 110px;
+  text-align: center;
+}
+
+.eth-icon {
+  height: 29px;
+  margin-bottom: -7px;
+  margin-left: 5px;
+}
+
+.form-left > h4 {
+  margin-top: 0%;
+  margin-bottom: 70px;
+}
+
+.form-left > p {
+  margin-bottom: 0%;
+}
+
+.form-right > input {
+  display: block;
+  width: 300px;
+  height: 50px;
+  margin-bottom: 15px;
+  background-color: #120a1d00;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #e47943;
+  color: white;
+}
+
+.send-btn {
+  cursor: pointer;
+  transition: 0.5s linear;
+}
+.send-btn:hover {
+  color: #5e9bca;
+}

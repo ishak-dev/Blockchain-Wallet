@@ -1,0 +1,22 @@
+import React from "react";
+import CryptoWallpaper from "../../img/crypto_wallpaper.png";
+const Intro = () => {
+  return (
+    <div className="intro-component">
+      <div className="intro-wallpaper">
+        <img
+          src={CryptoWallpaper}
+          alt="cryptowallpaper"
+          className="crypto-wallpaper"
+        />
+      </div>
+      <div className="intro-text">
+        <h1>Cryptocurrency wallet created By Ishak </h1>
+        <p>Use our wallet to send and receive crypto</p>
+        <button className="connect-wallet-btn">Connect wallet</button>
+      </div>
+    </div>
+  );
+};
+
+export default Intro;

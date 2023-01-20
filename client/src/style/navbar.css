@@ -1,0 +1,26 @@
+.navbar {
+  text-align: center;
+  overflow: hidden;
+  height: 100%;
+}
+
+.navbar > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(221, 221, 221);
+  list-style-type: none;
+  padding-left: 0%;
+}
+
+.navbar > ul > li {
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 25px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.navbar > ul > li:hover {
+  box-shadow: inset 0 -1px 0 0 #f38423;
+}
