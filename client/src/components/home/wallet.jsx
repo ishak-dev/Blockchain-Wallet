@@ -1,7 +1,11 @@
-import React from "react";
+import React,{useContext} from "react";
 import { FaEthereum } from "react-icons/fa";
+import { TransactionContext } from "../../../context/Transaction-Context";
+
+
 const Wallet = () => {
-  const walletConect = () => {};
+  
+
 
   const handleSumbit = () => {};
 
