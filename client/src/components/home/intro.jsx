@@ -4,7 +4,7 @@ import { TransactionContext } from "../../../context/Transaction-Context";
 
 const Intro = () => {
 
-  const {connectWallet} = useContext(TransactionContext);
+  const {connectWallet,currentAccount} = useContext(TransactionContext);
 
   return (
     <div className="intro-component">
@@ -18,7 +18,12 @@ const Intro = () => {
       <div className="intro-text">
         <h1>Cryptocurrency wallet created By Ishak </h1>
         <p>Use our wallet to send and receive crypto</p>
-        <button className="connect-wallet-btn" onClick={connectWallet}>Connect wallet</button>
+        
+          
+        <button className="connect-wallet-btn" onClick={connectWallet}>
+          {currentAccount ? "Your account is connected" : "Connect wallet"}
+          </button>
+        
       </div>
     </div>
   );
