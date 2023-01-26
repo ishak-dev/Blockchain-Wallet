@@ -1,13 +1,21 @@
 import React,{useContext} from "react";
+import { useState } from "react";
 import { FaEthereum } from "react-icons/fa";
 import { TransactionContext } from "../../../context/Transaction-Context";
 
 
 const Wallet = () => {
   
+  const {formData, addTransaction, handleChange} = useContext(TransactionContext)
 
-
-  const handleSumbit = () => {};
+  const handleSumbit = (e) => {
+    const {addressTo,amount} = formData;
+    e.preventDefault()
+    console.log(formData, addressTo,amount)
+    if(!addressTo || !amount){console.log("Sending transaction error")}
+    else{addTransaction()}
+    
+  };
 
   return (
     <div className="wallet-section">
@@ -26,9 +34,9 @@ const Wallet = () => {
         </div>
         <div className="form-right">
           <h3>Send your crypto</h3>
-          <input type="text" placeholder="Send to address" />
-          <input type="text" placeholder="Amount (ETH)" />
-          <h4 className="send-btn">Send</h4>
+          <input  placeholder="Send to address" name="addressTo" type="text"onChange={handleChange}/>
+          <input  placeholder="Amount (ETH)" name="amount" type="number"onChange={handleChange}/>
+          <h4 className="send-btn" onClick={handleSumbit}>Send</h4>
         </div>
       </div>
     </div>

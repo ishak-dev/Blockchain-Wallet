@@ -1,0 +1,38 @@
+.transaction-section {
+  margin: 30px;
+}
+
+.transaction-section h2 {
+  color: rgb(221, 221, 221);
+}
+
+.transaction-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.transaction-table td,
+.transaction-table th {
+  border: 1px solid #e26418;
+  padding: 8px;
+}
+
+.transaction-table thead {
+  color: #e26418;
+}
+.transaction-table tbody {
+  color: #2335a4;
+}
+
+.transaction-table {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  color: rgb(221, 221, 221);
+}
+
+.transaction-table tbody tr:hover {
+  background-color: #e26418;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}

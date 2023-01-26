@@ -13,14 +13,22 @@
   padding-left: 0%;
 }
 
-.navbar > ul > li {
+
+
+.navbar > ul > .link-to > li {
   margin-left: 15px;
   margin-right: 15px;
   padding: 25px;
-  cursor: pointer;
+  
   font-size: 18px;
 }
 
-.navbar > ul > li:hover {
+.navbar > ul > .link-to > li:hover{
   box-shadow: inset 0 -1px 0 0 #f38423;
+}
+
+
+.link-to{
+  all: unset;
+  cursor: pointer;
 }

@@ -7,24 +7,22 @@ contract Transactions{
     uint256 trnsCounter;
 
     //like function
-    event Transfer(address sender, address receiver, uint amount, string message, uint256 timestamp, string keyword );
+    event Transfer(address sender, address receiver, uint amount, uint256 timestamp);
     
     //like object
     struct TransferStruct{
         address sender;
         address receiver;
         uint amount;
-        string message;
-        uint256 timestamp;
-        string keyword;
+        uint256 timestamp;   
     }
 
     TransferStruct[] transactions;
 
-    function addToBlockchain(address payable receiver, uint amount, string memory message, string memory keyword)public {
+    function addToBlockchain(address payable receiver, uint amount)public {
         trnsCounter +=1;
-        transactions.push(TransferStruct(msg.sender, receiver, amount, message, block.timestamp, keyword));
-        emit Transfer(msg.sender, receiver, amount, message, block.timestamp, keyword);
+        transactions.push(TransferStruct(msg.sender, receiver, amount, block.timestamp));
+        emit Transfer(msg.sender, receiver, amount, block.timestamp);
 
 
     }
