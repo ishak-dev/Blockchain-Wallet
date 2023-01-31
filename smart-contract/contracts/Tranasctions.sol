@@ -6,7 +6,7 @@ pragma solidity ^0.8.0;
 contract Transactions{
     uint256 trnsCounter;
 
-    //like function
+    //like function which is publicly visible
     event Transfer(address sender, address receiver, uint amount, uint256 timestamp);
     
     //like object
